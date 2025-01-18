@@ -19,8 +19,7 @@ export class GetRoute extends BaseRoute {
 
         try {
             Logger.info(req.url);
-            //console.log(req);
-            //Logger.info(req);
+            
             const parametro_id = req?.query?.id;
             if(parametro_id < 0)
                 throw new Error("El parámetro id no puede ser menor a 0.");

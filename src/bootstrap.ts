@@ -23,6 +23,7 @@ import { ListenerContract } from "@ant/framework/lib/src/events";
 import { TestListener } from "./listeners/test.listener";
 import { GetRoute } from "./routes/get.route";
 import { PostRoute } from "./routes/post.route";
+import { MultiplyRoute } from "./routes/multiply.route";
 export class Boostrap implements BoostrapInterface {
     /**
      * The declared application's service providers.
@@ -41,7 +42,8 @@ export class Boostrap implements BoostrapInterface {
         HomeRoute,
         InfoRoute,
         GetRoute,
-        PostRoute
+        PostRoute,
+        MultiplyRoute
     ];
 
     /**
