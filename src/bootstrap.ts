@@ -24,6 +24,7 @@ import { TestListener } from "./listeners/test.listener";
 import { GetRoute } from "./routes/get.route";
 import { PostRoute } from "./routes/post.route";
 import { MultiplyRoute } from "./routes/multiply.route";
+import { SoloRoute } from "./routes/soloEndpoint.route";
 export class Boostrap implements BoostrapInterface {
     /**
      * The declared application's service providers.
@@ -43,7 +44,8 @@ export class Boostrap implements BoostrapInterface {
         InfoRoute,
         GetRoute,
         PostRoute,
-        MultiplyRoute
+        MultiplyRoute,
+        SoloRoute
     ];
 
     /**
