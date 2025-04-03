@@ -21,8 +21,9 @@ export class RandomNumber extends BaseRoute {
             
             return response({
                 message: 'Numero generado exitosamente',
-                parametro_id: (Math.random() * 1000).toFixed(0) 
+                numero_aleatorio: (Math.random() * 1000).toFixed(0) 
             });
+            
         } catch (error:any) {
             Logger.error(error);
             return response({
