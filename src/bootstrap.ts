@@ -26,6 +26,7 @@ import { PostRoute } from "./routes/post.route";
 import { MultiplyRoute } from "./routes/multiply.route";
 import { SoloRoute } from "./routes/soloEndpoint.route";
 import {RandomNumber} from "./routes/randomNumber.route";
+import { CurrencyRoute } from "./routes/currency.route";
 export class Boostrap implements BoostrapInterface {
     /**
      * The declared application's service providers.
@@ -47,7 +48,8 @@ export class Boostrap implements BoostrapInterface {
         PostRoute,
         MultiplyRoute,
         SoloRoute,
-        RandomNumber
+        RandomNumber,
+        CurrencyRoute
     ];
 
     /**
